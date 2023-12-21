@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Skl-RevoU</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<nav>
+    <img src="img/logo-toga.png" alt="">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="#achievement">Achievement</a></li>
+        <li><a href="#message">Message</a></li>
+    </ul>
+</nav>
+
+<button id="changeName">Ganti Nama</button>
+<header>
+    <h1>Hai <span id="name">Kiki</span> Welcome to My Web </h1>
+    <h4>SMA MAJU MUNDUR 1 INDONESIA</h4>
+    <img src="img/banner-siswa.jpg " alt="">
+</header>
+<div class="facilitations">
+    <div>
+        <div class="circle" style="background-image: url('img/footbal.png');"></div>
+        <h4>Football Arena</h4>
+    </div>
+    <div>
+        <div class="circle" style="background-image: url('img/Auditorium.webp');"></div>
+        <h4>Auditorium</h4>
+    </div>
+    <div>
+        <div class="circle" style="background-image: url('img/classroom.webp');"></div>
+        <h4>ClassRoom</h4>
+    </div>
+</div>
+
+<hr>
+
+<h1>Message Us</h1>
+<footer>
+    <form id="stakeholderForm">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Nama" id="name" name="name" required>
+
+        <label for="tanggal-lahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggal_lahir" name="tanggal-lahir" required>
+
+        <label for="jenis-kelamin">Jenis Kelamin</label>
+        <p><input type="radio" id="jenis_kelamin" name="jenis-kelamin" value="pria">Pria</p>
+        <p><input type="radio" id="jenis_kelamin" name="jenis-kelamin" value="perempuan">Perempuan</p>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="button" onclick="validateForm()">Submit</button>
+
+        <div class="message-h">
+            <label for="message-h"></label>
+            <textarea id="message_h" name="message-h" rows="10" cols="40" required></textarea>
+        </div>
+    </form>
+
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
